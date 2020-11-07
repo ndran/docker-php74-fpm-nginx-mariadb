@@ -14,6 +14,12 @@ Or you can bring over an existing laravel application
 - Volumes are your persistent data, you will not lose them on shutdowns, only if you prune the volume
 - Mount your local code to the volume so that you can make changes from your local machine
 
+### Docker-compose.yml
+
+- This file defines the build process. If your setup requires a custom image, create a seperate Dockerfile so that you can include your neccessary build steps there.
+- The image, if built from a Dockerfile will need to one you create, use your own username/new-image-name as a general naming convention
+- Be sure to update the php74 image name
+
 
 ## Helpful Commands
 
